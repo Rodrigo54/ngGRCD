@@ -1,9 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IonicModule } from '@ionic/angular';
+import { GRCDModule } from 'projects/grcd/src/public-api';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GRCDModule } from 'projects/grcd/src/public-api';
 
 @NgModule({
   declarations: [
@@ -11,10 +13,12 @@ import { GRCDModule } from 'projects/grcd/src/public-api';
   ],
   imports: [
     BrowserModule,
+    IonicModule.forRoot(),
+    BrowserAnimationsModule,
     GRCDModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
-import { GRCDComponent } from './grcd.component';
-
-
+import { GrQuantInputComponent } from './quant-input/quant-input.component';
+import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [GRCDComponent],
+  declarations: [GrQuantInputComponent],
   imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    IonicModule.forRoot()
   ],
-  exports: [GRCDComponent]
+  exports: [GrQuantInputComponent]
 })
 export class GRCDModule { }

@@ -4,9 +4,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { GrQuantInputComponent } from './quant-input/quant-input.component';
 import { IonicModule } from '@ionic/angular';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 @NgModule({
-  declarations: [GrQuantInputComponent],
+  declarations: [GrQuantInputComponent, SpinnerComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
